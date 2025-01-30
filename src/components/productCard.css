@@ -1,0 +1,36 @@
+/* Styling for the ProductCard component */
+div {
+    background-color: white;
+    width: 300px;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+span {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+span:nth-of-type(2) {
+    font-weight: bold;
+    color: #f15b24; /* Bright orange for the price */
+}
+
+h1 {
+    font-size: 16px;
+    color: #888;
+    font-weight: normal;
+    margin-top: 16px;
+}
