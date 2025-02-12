@@ -1,5 +1,8 @@
+import { useState } from "react";
+
 export default function Testing() {
-    let count = 0;
+    const [count, setCount] = useState(0)
+    
 
     return (
         <div className="w-full h-screen">    
@@ -7,7 +10,8 @@ export default function Testing() {
 
             <button onClick={
                 () => {
-                    count = count + 1
+                    const newCount = count + 1
+                    setCount(newCount)
                 }
              }>
                 Count
