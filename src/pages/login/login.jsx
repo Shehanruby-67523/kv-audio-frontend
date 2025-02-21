@@ -11,7 +11,17 @@ function handleOnSubmit(e) {
     e.preventDefault()
     console.log(email, password)
 
-    axios.post("http://localhost:3000/api/users/login")
+    axios.post("http://localhost:3000/api/users/login",
+        {
+            email: email,
+            password: password
+        }
+    ).then((res) => {
+        console.log(res)
+        alert("Login successful")
+    }).catch((err) => {
+        console.log(err)
+    })
 }
 
     return (    
