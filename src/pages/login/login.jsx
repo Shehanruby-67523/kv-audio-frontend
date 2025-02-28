@@ -24,13 +24,13 @@ function handleOnSubmit(e) {
         toast.success("Login successful")
 
         const user = res.data.user
-        localStorage.setItem();
+        localStorage.setItem("token", res.data.token);
 
-        // if (user.role === "admin") {
-        //     navigate("/admin/")
-        // } else {
-        //     navigate("/")
-        // }
+        if (user.role === "admin") {
+            navigate("/admin/")
+        } else {
+            navigate("/")
+        }
 
     }).catch((err) => {
         console.log(err)
